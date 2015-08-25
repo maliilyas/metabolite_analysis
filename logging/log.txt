@@ -1,0 +1,25 @@
+
+-------------- Neural Network -----------------
+Saving the model at :  C:\Users\Ali Ilyas\Desktop\pythonthesis\models\bootstrap60_40.obj
+The generation of data set and training started at :2015-08-25 02:27:09.544000
+('epoch:   50', '  train error:  0.07%')
+The training and result logging ended at 2015-08-25 02:27:55.068000 :
+Train error on testing data :  0.17%
+-------------- Neural Network -----------------
+Saving the model at :  C:\Users\Ali Ilyas\Desktop\pythonthesis\models\original_60_40.obj
+The generation of data set and training started at :2015-08-25 02:28:07.625000
+('epoch:   50', '  train error:  0.22%')
+The training and result logging ended at 2015-08-25 02:28:22.449000 :
+Train error on testing data :  0.52%
+-------------- Neural Network -----------------
+Testing independent dataset on original_60_40Train error on testing data :  0.52%
+-------------- Neural Network -----------------
+Testing independent dataset on original_60_40Train error on testing data :  0.52%
+-------------- Neural Network -----------------
+Testing independent dataset on original_60_40Train error on testing data :  0.52%
+-------------- Neural Network -----------------
+Testing independent dataset on original_60_40
+-------------- Neural Network -----------------
+Testing independent dataset on original_60_40Train error on testing data :  0.52%  , The length of data 193
+-------------- Neural Network -----------------
+Testing independent dataset on bootstrap60_40Train error on testing data :  0.52%  , The length of data 193
