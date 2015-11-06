@@ -33,31 +33,31 @@ def counting_columns(C1 , C2):
     C1_element = C1[0];
     start = 0;
     end   = 0;
-    large_dick = {}
+    end_dic = {}
     for _ in range(0,len( C1)):
         element = C1[_]
         if(element != C1_element):
             start = end # previous end of the element change
             end = _;
-            large_dick[C1_element] = count_unique_elements(C2, start, end)
+            end_dic[C1_element] = count_unique_elements(C2, start, end)
             C1_element = element
-    if(end < len(C1)): # means that last element has to be added in large_dick
-        large_dick[C1_element] = count_unique_elements(C2, end, len(C1))
+    if(end < len(C1)): # means that last element has to be added in end_dic
+        end_dic[C1_element] = count_unique_elements(C2, end, len(C1))
 
     
-    return large_dick        
+    return end_dic        
             
 def count_unique_elements(C2 , start,end):
-    dick = {}
+    dic_intermediate = {}
     for _ in range(start,end):
         element = C2[_];
-        if (dick.has_key(element)):
-            val = dick.get(element);
+        if (dic_intermediate.has_key(element)):
+            val = dic_intermediate.get(element);
             val = val + 1;
-            dick[element] = val;
+            dic_intermediate[element] = val;
         else:
-            dick[element] = 1;
-    return dick;
+            dic_intermediate[element] = 1;
+    return dic_intermediate;
             
               
 if __name__ == '__main__':
